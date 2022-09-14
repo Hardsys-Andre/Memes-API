@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62DDEEA29EF7347804A27A34 /* Pods_Memes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ADE94A8DE669DA458931DA /* Pods_Memes.framework */; };
+		AC44317128C7D79D0074AA43 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44317028C7D79D0074AA43 /* Meme.swift */; };
+		AC44317628C8022F0074AA43 /* MemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44317528C8022F0074AA43 /* MemeController.swift */; };
 		AC9036D828C77BC500CB4ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9036D728C77BC500CB4ABA /* AppDelegate.swift */; };
 		AC9036DA28C77BC500CB4ABA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9036D928C77BC500CB4ABA /* SceneDelegate.swift */; };
 		AC9036DC28C77BC500CB4ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9036DB28C77BC500CB4ABA /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FCC41DD4B21EEB4C615E648 /* Pods-Memes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memes.debug.xcconfig"; path = "Target Support Files/Pods-Memes/Pods-Memes.debug.xcconfig"; sourceTree = "<group>"; };
+		3060AED565AE02A9A2CF4BBE /* Pods-Memes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memes.release.xcconfig"; path = "Target Support Files/Pods-Memes/Pods-Memes.release.xcconfig"; sourceTree = "<group>"; };
+		AC44317028C7D79D0074AA43 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		AC44317528C8022F0074AA43 /* MemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeController.swift; sourceTree = "<group>"; };
 		AC9036D428C77BC500CB4ABA /* Memes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9036D728C77BC500CB4ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9036D928C77BC500CB4ABA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		AC9036E028C77BC500CB4ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9036E328C77BC500CB4ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9036E528C77BC500CB4ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4ADE94A8DE669DA458931DA /* Pods_Memes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DDEEA29EF7347804A27A34 /* Pods_Memes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B5564BAF64AF3BD45BFE4E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC41DD4B21EEB4C615E648 /* Pods-Memes.debug.xcconfig */,
+				3060AED565AE02A9A2CF4BBE /* Pods-Memes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7969FC4E8321345591062029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4ADE94A8DE669DA458931DA /* Pods_Memes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC44317228C7DE360074AA43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC44317028C7D79D0074AA43 /* Meme.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC44317328C7DE4A0074AA43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC9036DB28C77BC500CB4ABA /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC44317428C802030074AA43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC44317528C8022F0074AA43 /* MemeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AC9036CB28C77BC500CB4ABA = {
 			isa = PBXGroup;
 			children = (
 				AC9036D628C77BC500CB4ABA /* Memes */,
 				AC9036D528C77BC500CB4ABA /* Products */,
+				0B5564BAF64AF3BD45BFE4E0 /* Pods */,
+				7969FC4E8321345591062029 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +108,11 @@
 		AC9036D628C77BC500CB4ABA /* Memes */ = {
 			isa = PBXGroup;
 			children = (
+				AC44317428C802030074AA43 /* Controller */,
+				AC44317328C7DE4A0074AA43 /* View */,
+				AC44317228C7DE360074AA43 /* Model */,
 				AC9036D728C77BC500CB4ABA /* AppDelegate.swift */,
 				AC9036D928C77BC500CB4ABA /* SceneDelegate.swift */,
-				AC9036DB28C77BC500CB4ABA /* ViewController.swift */,
 				AC9036DD28C77BC500CB4ABA /* Main.storyboard */,
 				AC9036E028C77BC500CB4ABA /* Assets.xcassets */,
 				AC9036E228C77BC500CB4ABA /* LaunchScreen.storyboard */,
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC9036E828C77BC500CB4ABA /* Build configuration list for PBXNativeTarget "Memes" */;
 			buildPhases = (
+				8F73D574D4B76103FC986595 /* [CP] Check Pods Manifest.lock */,
 				AC9036D028C77BC500CB4ABA /* Sources */,
 				AC9036D128C77BC500CB4ABA /* Frameworks */,
 				AC9036D228C77BC500CB4ABA /* Resources */,
+				6D60E140CB45F828848444EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +189,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D60E140CB45F828848444EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memes/Pods-Memes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memes/Pods-Memes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Memes/Pods-Memes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F73D574D4B76103FC986595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC9036D028C77BC500CB4ABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC44317628C8022F0074AA43 /* MemeController.swift in Sources */,
 				AC9036DC28C77BC500CB4ABA /* ViewController.swift in Sources */,
+				AC44317128C7D79D0074AA43 /* Meme.swift in Sources */,
 				AC9036D828C77BC500CB4ABA /* AppDelegate.swift in Sources */,
 				AC9036DA28C77BC500CB4ABA /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +382,7 @@
 		};
 		AC9036E928C77BC500CB4ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCC41DD4B21EEB4C615E648 /* Pods-Memes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +410,7 @@
 		};
 		AC9036EA28C77BC500CB4ABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3060AED565AE02A9A2CF4BBE /* Pods-Memes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
